@@ -28,17 +28,17 @@ h1{
 }
 /* Ini bagian main / tengah / utama */
 main{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
-    align-items: center;
-    flex-direction: row;
-    overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-direction: column;
+  overflow: auto;
 }
 /* main bagian kiri */
 .kiri{
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: fit-content;
   align-content: flex-start;
   margin-right: 5%;
@@ -76,6 +76,7 @@ main{
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
+  max-height: 100%;
 }
 
 .tulisan3{
@@ -88,6 +89,7 @@ main{
 }
 
 .tulisan4{
+  max-width: 600px;
   font-size: large;
   text-align: justify;
   padding-top: 1%;
@@ -240,9 +242,11 @@ main{
     padding-top: 10px;
     padding-right: 20px;
     padding-bottom: 10px;
-    text-transform: uppercase;
   }
 
   h4{
     color: white;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 2px;
   }
