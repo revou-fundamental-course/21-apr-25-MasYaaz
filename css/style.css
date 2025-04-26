@@ -6,16 +6,13 @@
 }
 
 body{
-    width: fit-content;
-    height: fit-content;
-    background: white;
-    width: 100%;
-    height: 100%;
+  background: white;
 }
-
+/* Ini Header */
 header{
   background-color: hsl(217, 42%, 12%);
   display: flex;
+  flex-wrap: wrap;
   padding-top: 50px;
   padding-left: 50px;
   padding-bottom: 10px;
@@ -29,22 +26,21 @@ h1{
     letter-spacing: 2px;
     color:white;
 }
-
+/* Ini bagian main / tengah / utama */
 main{
     display: flex;
-    width: 100%;
-    height: 100%;
+    flex-wrap: wrap;
     padding-left: 50px;
     padding-right: 50px;
+    align-items: center;
     flex-direction: row;
+    overflow: auto;
 }
-
+/* main bagian kiri */
 .kiri{
   padding-top: 10px;
-  width: 43%;
-  height: 100%;
+  width: fit-content;
   align-content: flex-start;
-  flex-direction: column;
   margin-right: 5%;
 }
 
@@ -69,13 +65,16 @@ main{
     max-width: 600px;
     color: hsl(217, 42%, 12%);
 }
-
+/* Ini bagian kanannya */
 .kanan{
+  padding-top: 10px;
+  padding-bottom: 30px;
   display: flex;
-  width: 45%;
+  width:fit-content;
   height: 100%;
+  margin-right: 40px;
   flex-direction: column;
-  margin-right: 5%;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -112,7 +111,7 @@ main{
   padding-bottom: 1%;
   color: hsl(217, 42%, 12%);
 }
-
+/* ini tempat buat naruh textbox input */
 .inputs{
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +119,7 @@ main{
     margin-top: 15px;
     max-width: 500px;
 }
-
+/* Ini textbox inputnya */
 .input{
     color: black;
     flex: 1 1 40%;
@@ -142,12 +141,13 @@ main{
     background: wheat; border-radius: 20px;
     box-shadow: inset 7px 7px 14px rgb(192, 192, 192), inset -7px -7px 14px rgb(0, 0, 0);
 }
-
+/* Ini buat ngatur tulisan yang ada di textbox */
 ::placeholder{
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+/* Ini tombol clear buat hilangin semua tulisan */
 .tombol{
     margin: 12px;
     margin-left: 0;
@@ -157,6 +157,7 @@ main{
     padding: 0;
     outline: none;
     cursor: pointer;
+    /* yang diatas buat munculin tanda klik ketika deketin cursor ke tombol */
     font-family: sans-serif;
 }
 
@@ -230,4 +231,18 @@ main{
   .tombol .front span {
     user-select: none;
   }
-  
+
+  footer{
+    flex-direction: row-reverse;
+    background-color: hsl(217, 42%, 12%);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  h4{
+    color: white;
+  }
