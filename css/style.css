@@ -14,8 +14,8 @@ header{
   display: flex;
   flex-wrap: wrap;
   padding-top: 50px;
-  padding-left: 50px;
   padding-bottom: 10px;
+  justify-content: center;
   text-transform: uppercase;
   box-shadow: 7px 7px 14px rgb(122, 122, 122), inset -7px -7px 14px rgb(46, 46, 46);
 }
@@ -40,6 +40,7 @@ main{
   padding-right: 50px;
   flex-direction: column;
   overflow: auto;
+  align-content: center;
 }
 /* main bagian kiri */
 .kiri{
@@ -47,7 +48,6 @@ main{
   padding-bottom: 30px;
   width: fit-content;
   align-content: flex-start;
-  margin-right: 5%;
 }
 
 .tulisan1{
@@ -57,6 +57,7 @@ main{
   text-align: justify;
   padding-top: 1%;
   padding-bottom: 1%;
+  padding-left: 60px;
   max-width: 600px;
   color: hsl(217, 42%, 12%);
 }
@@ -79,6 +80,7 @@ main{
   text-align: justify;
   padding-top: 1%;
   padding-bottom: 1%;
+  padding-left: 60px;
   color: hsl(217, 42%, 12%);
 }
 
@@ -88,6 +90,7 @@ main{
   text-align: justify;
   padding-top: 1%;
   padding-bottom: 1%;
+  padding-left: 65px;
   color: hsl(217, 42%, 12%);
 }
 /* ini tempat buat naruh textbox input */
@@ -97,6 +100,7 @@ main{
     justify-content: left;
     margin-top: 30px;
     max-width: 500px;
+    padding-left: 60px;
 }
 /* Ini textbox inputnya */
 .input{
@@ -130,7 +134,7 @@ main{
 /* Ini tombol clear buat hilangin semua tulisan */
 .tombol{
     margin: 12px;
-    margin-left: 0;
+    margin-left: 60px;
     position: relative;
     border: none;
     background: transparent;
@@ -139,6 +143,7 @@ main{
     cursor: pointer;
     /* yang diatas buat munculin tanda klik ketika deketin cursor ke tombol */
     font-family: sans-serif;
+
 }
 
 /* Shadow layer */
@@ -229,7 +234,7 @@ main{
     letter-spacing: 2px;
   }
 /* Ini untuk mengatur ukuran web dengan ukuran layar berbeda */
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 400px) {
   header{
     display: flex;
     flex-direction: row-reverse;
@@ -257,10 +262,12 @@ main{
   }
   .tulisan1{
     font-size: small;
+    padding-left: 5px;
   }
   .inputs{
     margin-top: 20px;
     max-width: 350px;
+    padding-left: 5px;
   }
   .input{
     margin-bottom: 20px;
@@ -291,5 +298,14 @@ main{
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+  }
+  .tombol{
+    margin-left: 5px;
+  }
+  .tulisan5{
+    padding-left: 5px;
+  }
+  .tulisan6{
+    padding-left: 6px;
   }
 }
