@@ -60,17 +60,6 @@ main{
   max-width: 600px;
   color: hsl(217, 42%, 12%);
 }
-
-.tulisan2{
-    font-size: large;
-    display: flex;
-    justify-content: left;
-    text-align: justify;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    max-width: 600px;
-    color: hsl(217, 42%, 12%);
-}
 /* Ini bagian kanannya */
 .kanan{
   padding-top: 10px;
@@ -78,29 +67,11 @@ main{
   display: flex;
   width:fit-content;
   height: 100%;
-  margin-right: 40px;
+  margin-right: 5%;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
   max-height: 100%;
-}
-
-.tulisan3{
-  font-size: 35px;
-  text-align: justify;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  color: hsl(217, 42%, 12%);
-  font-weight: bold;
-}
-
-.tulisan4{
-  max-width: 600px;
-  font-size: large;
-  text-align: justify;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  color: hsl(217, 42%, 12%);
 }
 
 .tulisan5{
@@ -257,3 +228,68 @@ main{
     text-transform: none;
     letter-spacing: 2px;
   }
+/* Ini untuk mengatur ukuran web dengan ukuran layar berbeda */
+@media screen and (max-width: 440px) {
+  header{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  h1{
+    font-size:30px;
+  }
+  .logo{
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 0px;
+  }
+  main{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+  }
+  .kiri{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .tulisan1{
+    font-size: small;
+  }
+  .inputs{
+    margin-top: 20px;
+    max-width: 350px;
+  }
+  .input{
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border-radius: 40px;
+    padding: 0.5em;
+    box-shadow: inset 1px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+    max-width: 80%;
+  }
+  ::placeholder{
+    font-size: small;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .input:focus{
+    background-color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 7px 7px 50px #969696, -7px -7px 50px #ffffff;
+  }
+  h4{
+    color: white;
+    font-size: small;
+    text-transform: none;
+    letter-spacing: 2px;
+  }
+  footer{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+}
