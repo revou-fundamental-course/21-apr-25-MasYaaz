@@ -18,39 +18,54 @@
      <main>
         <div class="atas">
             <span class="tulisan1">Selamat datang di mini project Revou "KONVERTER SUHU".</span>
-            <span class="tulisan1">Untuk menggunakan mini project ini, Masukkan jumlah suhu derajat yang diketahui ke kotak dibawah ini, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam tiga bentuk derajat suhu yang lain.</span>
+            <span class="tulisan1">Untuk menggunakan mini project ini, Masukkan jumlah suhu derajat yang diketahui ke 
+              kotak dibawah ini, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam tiga bentuk derajat suhu yang lain.</span>
                 <div class="inputs">
-                <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius">
-                <a>&deg;C</a>
-                <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit">
-                <a>&deg;F</a>
-                <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin">
-                <a>&deg;K</a>
-                <input type="number" name="reamur" id="reamur" class="input" placeholder="Reamur">
-                <a>&deg;R</a>
+                  <div class="row">
+                    <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius">
+                    <a>&deg;C</a>
+                  </div>
+                  <div class="row">
+                    <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit">
+                    <a>&deg;F</a>
+                  </div>
+                  <div class="row">
+                    <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin">
+                    <a>&deg;K</a>
+                  </div>
+                  <div class="row">
+                    <input type="number" name="reamur" id="reamur" class="input" placeholder="Reamur">
+                    <a>&deg;R</a>
+                  </div>
                 </div>
             <button class="tombol" onclick="clearDisplay()">
                 <span class="shadow"></span>
                 <span class="edge"></span>
                 <div class="front">
-                <span>Clear</span>
+                <span class="tbl">Clear</span>
             </button>
         </div>
         <div class="bawah">
-            <span class="tulisan5">BAGAIMANA CARA KONVERSI?</span>
+            <span class="tulisan3">BAGAIMANA CARA KONVERSI?</span>
             <span class="tulisan1">Rumus konversi suhu yang umum digunakan meliputi konversi antara Celsius, Fahrenheit, Kelvin, dan Reamur. Rumus-rumusnya adalah sebagaimana berikut:</span>
-            <span class="tulisan5">Celsius ke Fahrenheit:</span>
-            <span class="tulisan6">°F = (°C * 9/5) + 32</span>
-            <span class="tulisan5">Fahrenheit ke Celsius:</span>
-            <span class="tulisan6">°C = (°F - 32) * 5/9</span>
-            <span class="tulisan5">Celsius ke Kelvin:</span>
-            <span class="tulisan6">°K = °C + 273.15</span>
-            <span class="tulisan5">Kelvin ke Celsius:</span>
-            <span class="tulisan6">°C = K - 273.15</span>
-            <span class="tulisan5">Celsius ke Reamur:</span>
-            <span class="tulisan6">°R = °C * 4/5</span>
-            <span class="tulisan5">Reamur ke Celsius:</span>
-            <span class="tulisan6">°C = °R * 5/4</span>
+            <div class="pemisah">
+              <div class="pembatas">
+                <span class="tulisan5">Celsius ke Fahrenheit:</span>
+                <span class="tulisan6">°F = (°C * 9/5) + 32</span>
+                <span class="tulisan5">Fahrenheit ke Celsius:</span>
+                <span class="tulisan6">°C = (°F - 32) * 5/9</span>
+                <span class="tulisan5">Celsius ke Kelvin:</span>
+                <span class="tulisan6">°K = °C + 273.15</span>
+              </div>
+              <div class="pembatas">
+                <span class="tulisan5">Kelvin ke Celsius:</span>
+                <span class="tulisan6">°C = K - 273.15</span>
+                <span class="tulisan5">Celsius ke Reamur:</span>
+                <span class="tulisan6">°R = °C * 4/5</span>
+                <span class="tulisan5">Reamur ke Celsius:</span>
+                <span class="tulisan6">°C = °R * 5/4</span>
+              </div>
+            </div>
         </div> 
     </main>
     <footer>
