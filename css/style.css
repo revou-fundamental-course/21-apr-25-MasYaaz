@@ -73,26 +73,27 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  margin-top: 30px;
+  margin-top: 10px;
   max-width: 1000px;
   flex-direction: column;
 }
 .row{
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-  margin-top: 30px;
+  justify-content: center;
+  margin-top: 20px;
   width: 1000px;
   flex-direction: row;
 }
-a{
+.a{
   width: 2%;
+  padding-left: 10px;
 }
 /* Ini textbox inputnya */
 .input{
   color: black;
   flex: 1 1 40%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   appearance: none;
   background: none;
   background-color: rgb(255, 255, 255);
@@ -102,12 +103,12 @@ a{
   padding: 1em;
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
   transition: 300ms ease-in-out;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .input:focus{
   background-color: #ffffff;
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
 }
 /* Ini buat ngatur tulisan yang ada di textbox */
@@ -387,6 +388,7 @@ a{
     padding-bottom: 10px;
   }
   .row{
+    margin-top: 5px;
     max-width: 350px;
   }
   .tulisan1{
@@ -399,7 +401,7 @@ a{
     padding-left: 5px;
   }
   .input{
-    font-size: x-small;
+    font-size: medium;
     margin-bottom: 10px;
     margin-right: 5px;
     border-radius: 40px;
@@ -416,11 +418,12 @@ a{
   }
   .input:focus{
     background-color: #ffffff;
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 7px 7px 50px #969696, -7px -7px 50px #ffffff;
   }
-  a{
-    font-size: x-small
+  .a{
+    font-size: x-small;
+    padding-left: 0;
   }
   .bawah{
     max-width: 350px;
@@ -453,5 +456,25 @@ a{
     font-size: small;
     text-transform: none;
     letter-spacing: 2px;
+  }
+  .example-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 8px;
+    transition: all 0.3s ease;
   }
 }
