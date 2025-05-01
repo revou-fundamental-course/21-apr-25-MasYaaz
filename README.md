@@ -2,6 +2,6 @@
 Kalkulator ini berguna untuk mengkonversi satuan suhu dari Celcius, Fahrenheit, Reamur & Kelvin
 
 # Gambar Antarmuka Program
-![Tampilan Website](img/tampilan.png)
+![Tampilan Website](res/tampilan.png)
 
 # FUNGSI ANTARMUKA
