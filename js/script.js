@@ -5,6 +5,7 @@ const reamursuhu = document.getElementById("reamur");
 
 const inputs = document.getElementsByClassName("input");
 
+// ini fungsi input
 for(let i=0; i<inputs.length; i++) {
     let input = inputs[i];
 
